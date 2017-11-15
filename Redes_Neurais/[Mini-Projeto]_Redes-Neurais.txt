@@ -24,3 +24,49 @@ Que informações podemos obter como saída de uma rede neural?
 (X) O rótulo de um vetor
 (X) Uma saída vetorial para qualquer entrada vetorial
 
+Quiz:
+Um problema dos perceptrons é que suas saídas são valores discretos. Isso dificulta sua aplicação em problemas de regressão, 
+tornando necessário aumentar sua complexidade para capturar certos conceitos.
+
+Por exemplo:
+Dada uma rede de perceptrons com estrutura [2, 2, 1]— ou seja, dois nós de entrada, dois ocultos e um de saída.
+Quantos preços possíveis ela poderia dar para uma casa?
+R: 4
+
+Quiz: Função De Ativação
+Decidimos que precisamos de uma função contínua (para evitar os problemas com valores discretos do perceptron) mas não linear 
+(para podermos representar funções não lineares). Qual das funções seguintes parece adequada?
+
+( ) seno
+( ) arcotangente
+( ) logaritmo natural
+( ) raiz cúbica
+(X) função logística
+
+Quiz: Perceptron X Sigmóide
+Qual é a diferença entre uma unidade perceptron e uma sigmóide em funções de classificação binária?
+
+( ) Não há diferença
+(X) Uma deles dá mais informações, mas ambas dão a mesma resposta
+( ) Às vezes, a resposta é diferente
+( ) A resposta sempre é diferente
+( ) A resposta é diferente em algumas circunstâncias raras
+
+Quiz: Aprendizagem Com Sigmóides
+Precisamos treinar nossas redes de sigmóides como treinaríamos redes de perceptrons. Como determinamos as regras de atualização?
+
+( ) Arbitrariamente
+( ) Usando a intuição
+( ) Usando conhecimento de domínio
+(X) Usando cálculo
+( ) Usando trigonometria
+
+Quiz: Problemas Com O Método Gradiente
+Usando cálculo, o método gradiente pode nos dar um ótimo conjunto local de pesos, sob certas suposições. 
+Porém, podem surgir problemas. Quais dos seguintes você acha que podem ser problemáticos?
+
+(X) Extremos locais
+(X) Tempo longo de execução
+(X) Loops infinitos
+(X) Incapacidade de convergir
+
