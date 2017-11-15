@@ -1,0 +1,26 @@
+Quiz: Onde Treinar Perceptrons
+Queremos construir redes de perceptrons que contenham funções interessantes. Quais são os parâmetros do perceptron que queremos modificar?
+
+( ) Funções de saída
+( ) Valores de entrada
+(X) Limiares
+(X) Pesos
+( ) Funções de entrada
+
+Quiz: Entradas Do Perceptron
+Redes neurais são construídas com componentes como os perceptrons. Como são os valores de entrada para redes de perceptrons?
+
+( ) Matrizes de valores numéricos, com alguns valores de saída rotulados
+( ) Grafos orientados
+( ) Matrizes de valores numéricos sem rótulos
+( ) Conjuntos de rótulos de valores numéricos
+(X) Matrizes de valores numéricos com rótulos para todas as linhas
+
+Quiz: Saídas De Redes Neurais
+Que informações podemos obter como saída de uma rede neural?
+
+(X) Um grafo orientado, a própria rede neural
+(X) Um único número com valor escalar
+(X) O rótulo de um vetor
+(X) Uma saída vetorial para qualquer entrada vetorial
+
