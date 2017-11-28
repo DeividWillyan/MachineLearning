@@ -11952,14 +11952,15 @@ Acredito que esté seja um problema de classificação, porque queremos identifi
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Calcule o número de estudante</span>
 <span class="n">n_students</span> <span class="o">=</span> <span class="n">student_data</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 
 <span class="c1"># TODO: Calcule o número de atributos</span>
-<span class="n">n_features</span> <span class="o">=</span> <span class="n">student_data</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="c1">#n_features = student_data.shape[1] - 1</span>
+<span class="n">n_features</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">student_data</span><span class="o">.</span><span class="n">columns</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
 
 <span class="c1"># TODO: Calcule o número de alunos aprovados</span>
 <span class="n">n_passed</span> <span class="o">=</span> <span class="n">student_data</span><span class="p">[</span><span class="s1">&#39;passed&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
@@ -11994,7 +11995,7 @@ Acredito que esté seja um problema de classificação, porque queremos identifi
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Número total de estudantes: 395
-Número de atributos: 31
+Número de atributos: 30
 Número de estudantes aprovados: 265
 Número de estudantes reprovados: 130
 Taxa de graduação: 67.09%
@@ -12798,7 +12799,7 @@ O Melhor modelo segundos os testes atualmente seria o SVC, onde os pontos de tre
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Resposta: </strong> 
-O Modelo SVC deve funcionar basicamente recebendo um dado de entrada e preve para ele a qual categoria ele faz parte, ele utiliza uma tecnica que busca encontrar uma linha que faz a separação das categorias, a linha tenta maximizar a distancia entre os pontos das categorias.</p>
+O Modelo SVC deve funcionar basicamente recebendo duas classes com seus respectivos pontos (passou ou não-passou), ele então tenta determinar o hiperplano que melhor separa as classes, para fazer isso ele tenta encontrar a menor distancia de um hiperplano e os pontos da classe (vetores suporte), essa distancia é chamada de margem de separação.</p>
 
 </div>
 </div>
